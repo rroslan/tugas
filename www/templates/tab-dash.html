@@ -1,0 +1,20 @@
+<ion-view view-title="Tugas">
+  <ion-content class="padding">
+    <div ng-if="authData.facebook" class="list card">
+      <div class="item item-avatar">
+        <div class="item-image facebook-avatar" back-img="{{authData.facebook.cachedUserProfile.picture.data.url}}"></div>
+        <h2>{{authData.facebook.displayName}}</h2>
+        <p>Facebook</p>
+      </div>
+
+    </div>
+
+   
+
+<div style="text-align:center">
+   
+    <button ng-hide="authData.facebook" class="button button-positive icon ion-social-facebook button-round" ng-click="login('facebook')"></button>
+    
+</div>
+  </ion-content>
+</ion-view>
